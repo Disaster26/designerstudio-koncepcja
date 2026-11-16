@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Michał Zieliński - Graphic Designer, Lublin: logo, opakowania, reklama, strony www</title>
+<meta name="description" content="Michał Zieliński, projektant grafiki z Lublina: logo i identyfikacja wizualna, opakowania i etykiety, grafika reklamowa, oznakowanie firm i pojazdów, strony internetowe. Od projektu do druku. Tel. 793 301 659.">
+<meta name="theme-color" content="#16161A">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-720.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1440.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/brico-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/brico-pl.woff2" crossorigin>
+<style>
+@font-face{font-family:Brico;src:url(fonts/brico-rdzen.woff2) format("woff2");font-weight:400 700;font-stretch:78% 100%;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Brico;src:url(fonts/brico-pl.woff2) format("woff2");font-weight:400 700;font-stretch:78% 100%;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Brico fb";src:local("Arial");size-adjust:100%;ascent-override:92%}
+:root{--mag:#C00080;--mag2:#A8006F;--gr:#58595B;--ink:#16161A;--mut:#5A5C66;--g:#F2F3F5;--line:#DFE1E6;--hh:72px;--w:min(92vw,1720px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Brico,"Brico fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.3vw + 14.8px,19px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700;font-stretch:80%;line-height:1;letter-spacing:-.01em}
+h1{font-size:clamp(40px,4vw + 14px,96px);text-wrap:balance}
+h2{font-size:clamp(36px,3vw + 14px,80px);text-wrap:balance}
+h3{font-size:clamp(22px,.7vw + 16px,30px);line-height:1.08}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+.sec{padding:clamp(64px,7vw,140px) 0}
+.g{background:var(--g)}
+.lead{font-size:clamp(17px,.45vw + 15px,22px);color:var(--mut);max-width:60ch}
+.hd{display:grid;grid-template-columns:1fr 1fr;gap:20px clamp(32px,5vw,110px);align-items:end}
+/* wezel - punkt kotwiczenia z uchwytem, jak w piórze */
+.wz{display:block;width:100%;height:14px;margin-bottom:clamp(36px,4vw,64px);position:relative}
+.wz::before{content:"";position:absolute;left:0;right:0;top:6px;height:1.5px;background:linear-gradient(90deg,var(--gr) 0 120px,var(--line) 120px)}
+.wz::after{content:"";position:absolute;left:112px;top:0;width:12px;height:12px;border:1.5px solid var(--mag);background:#fff;box-shadow:-112px 0 0 -1.5px #fff,-112px 0 0 0 var(--gr)}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:0 28px;border:0;border-radius:0;background:var(--mag2);color:#fff;font:inherit;font-weight:600;font-size:17px;text-decoration:none;cursor:pointer;transition:background .2s;position:relative}
+.btn::after{content:"";width:9px;height:9px;border:1.5px solid currentColor;background:transparent;flex:none}
+.btn:hover{background:#86005A}
+.btn:focus-visible,a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #F7A8DA;outline-offset:3px}
+/* naglowek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);flex:none}
+.logo svg{display:block}
+.logo .sub{font-size:14px;color:var(--mut);line-height:1.25;border-left:1px solid var(--line);padding-left:12px}
+.menu{display:flex;gap:clamp(18px,2vw,40px);margin-left:auto;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--mag2)}
+.menu a.on{border-color:var(--mag)}
+.top .tel{font-weight:700;text-decoration:none;white-space:nowrap}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+.burger{display:none}
+/* hero */
+.hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;align-items:center;color:#fff;background:#121216;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:30% 50%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(270deg,rgba(14,14,18,.94) 0,rgba(14,14,18,.86) 30%,rgba(14,14,18,.35) 52%,rgba(14,14,18,0) 66%)}
+.hero .wrap{position:relative;z-index:2;padding:clamp(40px,7vh,100px) 0;display:flex}
+.hero .txt{margin-left:auto;width:min(760px,44%)}
+.krzywa{display:block;width:clamp(200px,16vw,300px);height:auto;margin-bottom:28px;overflow:visible}
+.hero p.l{margin-top:24px;font-size:clamp(17px,.5vw + 15px,22px);line-height:1.5;color:#DADBE1;max-width:44ch}
+.hero .cta{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px}
+.hero .inf{font-size:16px;color:#C9CAD2}
+.hero .inf a{color:#fff;font-weight:700;text-decoration:none}
+.pd-m{display:none}
+.podpis{position:absolute;z-index:2;left:max(4vw,16px);bottom:18px;font-size:13px;color:rgba(255,255,255,.75);max-width:60%}
+/* oferta */
+.of{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,1.6vw,32px);margin-top:clamp(36px,4vw,64px)}
+.of article{display:flex;flex-direction:column}
+.of .ph{aspect-ratio:16/10;overflow:hidden;background:var(--g)}
+.of .ph img{width:100%;height:100%;object-fit:cover}
+.of h3{margin-top:22px}
+.of p{margin-top:10px;color:var(--mut);font-size:.95em}
+.of ul{margin:14px 0 0;padding:14px 0 0;list-style:none;border-top:1px solid var(--line);font-size:.92em;display:grid;gap:5px}
+.of li{position:relative;padding-left:18px}
+.of li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border:1.5px solid var(--mag)}
+/* portfolio */
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(28px,3vw,44px)}
+.fl button{font:inherit;font-size:15px;font-weight:600;padding:10px 16px;border:1.5px solid #C9CBD3;background:#fff;color:var(--ink);cursor:pointer;border-radius:0}
+.fl button:hover{border-color:var(--ink)}
+.fl button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.pf{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.4vw,28px);margin-top:28px}
+.pf figure{margin:0}
+.pf figure[hidden]{display:none}
+.pf button{all:unset;display:block;width:100%;aspect-ratio:16/10;cursor:zoom-in;position:relative;background:#fff}
+.pf button img{width:100%;height:100%;object-fit:cover}
+.pf figcaption{margin-top:12px;font-weight:600;font-size:.95em;line-height:1.3}
+.pf figcaption span{display:block;font-weight:400;color:var(--mut);font-size:.92em;margin-top:2px}
+/* ramka zaznaczenia z uchwytami */
+.sel{position:absolute;inset:-5px;border:1.5px solid var(--mag);opacity:0;transition:opacity .18s;pointer-events:none}
+.sel i{position:absolute;width:9px;height:9px;background:#fff;border:1.5px solid var(--mag)}
+.sel i:nth-child(1){left:-5px;top:-5px}.sel i:nth-child(2){left:calc(50% - 4.5px);top:-5px}.sel i:nth-child(3){right:-5px;top:-5px}
+.sel i:nth-child(4){left:-5px;top:calc(50% - 4.5px)}.sel i:nth-child(5){right:-5px;top:calc(50% - 4.5px)}
+.sel i:nth-child(6){left:-5px;bottom:-5px}.sel i:nth-child(7){left:calc(50% - 4.5px);bottom:-5px}.sel i:nth-child(8){right:-5px;bottom:-5px}
+.pf button:hover .sel,.pf button:focus-visible .sel{opacity:1}
+.pf button:focus-visible{outline:none}
+/* druk - ciemna */
+.dk{background:var(--ink);color:#D6D7DD}
+.dk h2{color:#fff}
+.dk .lead{color:#B9BBC4}
+.dr{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(36px,5vw,110px);align-items:center}
+.dr .ph{position:relative}
+.dr .ph img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.dr .ph .sel{opacity:1;inset:-7px}
+.dr .ph .sel i{background:var(--ink)}
+.dl{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;margin-top:40px}
+.dl h3{color:#fff;font-size:clamp(19px,.5vw + 15px,24px)}
+.dl ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px;font-size:.95em}
+.dl li{position:relative;padding-left:18px}
+.dl li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border:1.5px solid #E255B0}
+/* klienci */
+.kl{margin-top:clamp(32px,3vw,52px);display:grid;grid-template-columns:repeat(6,1fr);gap:0 clamp(16px,2vw,40px);list-style:none;padding:0}
+.kl li{padding:12px 0;border-top:1px solid var(--line);font-weight:600;font-size:.98em}
+/* kontakt */
+.kt{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,4vw,90px);align-items:start}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+label{display:grid;gap:6px;font-size:15px;font-weight:600}
+label.w{grid-column:1/-1}
+input,textarea,select{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid #C9CBD3;border-radius:0;padding:13px 14px;width:100%}
+textarea{min-height:140px;resize:vertical}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--mag);box-shadow:0 0 0 3px rgba(192,0,128,.14)}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#D0021B}
+form .btn{justify-self:start}
+.msg{grid-column:1/-1;padding:16px 18px;background:#fff;border-left:4px solid var(--mag);color:var(--ink)}
+.msg[hidden]{display:none}
+.note{grid-column:1/-1;font-size:14px;color:var(--mut)}
+.dane{display:grid;gap:22px;margin-top:32px}
+.dane h3{font-size:19px}
+.dane p,.dane a{color:var(--mut);text-decoration:none}
+.dane a:hover{color:var(--mag2)}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#DFE2E8}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+/* stopka */
+footer{background:#fff;border-top:1px solid var(--line);padding:48px 0 28px;font-size:15px;color:var(--mut)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+footer h4{margin:0 0 10px;font-size:15px;color:var(--ink)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--mag2)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.fb{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:center}
+.fb .cp{font-size:.875em}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,14,18,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1500px);max-height:80vh;width:auto;height:auto}
+.lb p{position:absolute;left:0;right:0;bottom:22px;text-align:center;color:#fff;font-size:16px;padding:0 70px}
+.lb button{position:absolute;width:52px;height:52px;border:1.5px solid rgba(255,255,255,.6);border-radius:0;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;font-size:24px;line-height:1}
+.lb .x{top:16px;right:16px;font-size:30px}
+.lb .pv{left:16px;top:50%;transform:translateY(-50%)}
+.lb .nx{right:16px;top:50%;transform:translateY(-50%)}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (min-width:1800px){:root{--hh:84px}.logo svg{height:52px;width:auto}.menu a{font-size:18px}.top .tel{font-size:19px}.top .btn{min-height:50px;font-size:17px}.pf{grid-template-columns:repeat(6,1fr)}}
+@media (max-width:1500px){.of{grid-template-columns:repeat(3,1fr)}.kl{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:1180px){.menu,.top .tel,.logo .sub{display:none}
+.burger{display:grid;place-items:center;margin-left:auto;width:48px;height:48px;border:1.5px solid var(--line);background:#fff;cursor:pointer}
+.burger i,.burger i::before,.burger i::after{display:block;width:22px;height:2px;background:var(--ink);position:relative;content:"";transition:transform .2s}
+.burger i::before{position:absolute;top:-7px}.burger i::after{position:absolute;top:7px}
+.top.open .burger i{background:transparent}.top.open .burger i::before{transform:translateY(7px) rotate(45deg)}.top.open .burger i::after{transform:translateY(-7px) rotate(-45deg)}
+.top.open .menu{display:flex;position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:8px 4vw 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.12)}
+.top.open .menu a{font-size:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.top.open .menu a.on{border-bottom-color:var(--mag)}
+.top .btn{display:none}
+.pf{grid-template-columns:repeat(3,1fr)}.dr{grid-template-columns:1fr}.kl{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){:root{--hh:64px}
+.logo svg{height:44px;width:auto}
+.hero{align-items:flex-end}
+.hero picture img{object-position:50% 30%}
+.hero::before{background:linear-gradient(0deg,rgba(14,14,18,.96) 0,rgba(14,14,18,.88) 45%,rgba(14,14,18,.3) 72%,rgba(14,14,18,.05) 100%)}
+.hero .wrap{padding:26px 0 44px}
+.hero .txt{width:100%}
+.krzywa{display:none}
+.hero p.l{margin-top:16px;font-size:16.5px}
+.hero .cta{margin-top:24px;gap:14px}
+.hero .btn{width:100%;justify-content:center}
+.hero .inf{font-size:15px}
+.pd-d{display:none}.pd-m{display:inline}
+.podpis{bottom:12px;font-size:12px;max-width:none;right:16px}
+.hd{grid-template-columns:1fr}
+.of{grid-template-columns:1fr 1fr;gap:28px 14px}
+.of p{display:none}
+.pf{grid-template-columns:1fr 1fr;gap:18px 12px}
+.pf figcaption{font-size:.88em}
+.fl{flex-wrap:nowrap;overflow-x:auto;margin-inline:-4vw;padding-inline:4vw;scrollbar-width:none}
+.fl::-webkit-scrollbar{display:none}
+.fl button{white-space:nowrap;flex:none}
+.dl{grid-template-columns:1fr}
+.kl{grid-template-columns:1fr 1fr}
+.kt{grid-template-columns:1fr}
+form{grid-template-columns:1fr}
+.fg{grid-template-columns:1fr 1fr}
+.fg>div:first-child{grid-column:1/-1}
+}
+@media (max-width:420px){.of{grid-template-columns:1fr}.of p{display:block}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+<div class="wrap">
+<a class="logo" href="#" aria-label="Michał Zieliński - Graphic Designer, strona główna">
+<svg width="140" height="50" viewBox="0 0 136 48" role="img" aria-label="graphic designer">
+<g transform="rotate(-45 12 10)"><rect x="8.5" y="-1" width="7" height="5" fill="#58595B"/><path d="M8 6h8l1 6-5 9-5-9z" fill="#58595B"/><circle cx="12" cy="12.5" r="1.3" fill="#fff"/></g>
+<path d="M13 40L33 20" stroke="#58595B" stroke-width="1.3"/><rect x="10.5" y="37.5" width="5" height="5" fill="#fff" stroke="#58595B" stroke-width="1.2"/><rect x="30.5" y="17.5" width="5" height="5" fill="#fff" stroke="#58595B" stroke-width="1.2"/>
+<path fill-rule="evenodd" fill="#C00080" d="M24 22h11a12 12 0 1 1-11 12zM29.2 27.2h5.8a6.8 6.8 0 1 1-5.8 6.8z"/>
+<text x="52" y="21" font-family="Brico,Arial,sans-serif" font-weight="600" font-stretch="80%" font-size="23" fill="#16161A" textLength="76" lengthAdjust="spacingAndGlyphs">graphic</text>
+<text x="0" y="0" transform="translate(128 29) rotate(180)" font-family="Brico,Arial,sans-serif" font-weight="600" font-stretch="80%" font-size="23" fill="#16161A" textLength="76" lengthAdjust="spacingAndGlyphs">designer</text>
+</svg>
+<span class="sub">Michał Zieliński<br>Kreatywne Studio Graficzne</span>
+</a>
+<nav class="menu" id="menu" aria-label="Menu">
+<a href="#oferta">Oferta</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#druk">Od projektu do druku</a>
+<a href="#klienci">Klienci</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+<a class="tel" href="tel:+48793301659">793 301 659</a>
+<a class="btn" href="#kontakt">Wycena</a>
+<button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<picture>
+<source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w" sizes="100vw">
+<img src="img/hero-1440.webp" srcset="img/hero-1024.webp 1024w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="1200" alt="Billboard Czarnej Perły zaprojektowany przez Michała Zielińskiego" fetchpriority="high">
+</picture>
+<div class="wrap">
+<div class="txt">
+<svg class="krzywa" viewBox="0 0 300 70" aria-hidden="true"><path d="M6 62C70 62 96 8 160 8S250 40 294 22" fill="none" stroke="#E255B0" stroke-width="2"/><path d="M6 62L60 62M160 8L110 8M160 8L210 8" stroke="rgba(255,255,255,.55)" stroke-width="1"/><g fill="#121216" stroke="#fff" stroke-width="1.5"><rect x="2" y="58" width="8" height="8"/><rect x="156" y="4" width="8" height="8" stroke="#E255B0"/><rect x="290" y="18" width="8" height="8"/></g><g fill="#fff"><circle cx="60" cy="62" r="3"/><circle cx="110" cy="8" r="3"/><circle cx="210" cy="8" r="3"/></g></svg>
+<h1>Logo, opakowania i reklama - od projektu do druku</h1>
+<p class="l">Projektuję identyfikacje wizualne, opakowania, strony internetowe i materiały reklamowe. Dzięki wieloletniej pracy w drukarni pilnuję, żeby wydruk wyglądał dokładnie tak jak projekt.</p>
+<div class="cta">
+<a class="btn" href="#kontakt">Zamów bezpłatną wycenę</a>
+<p class="inf">Michał Zieliński, Lublin - tel. <a href="tel:+48793301659">793 301 659</a></p>
+</div>
+</div>
+</div>
+<p class="podpis"><span class="pd-d">Na zdjęciu: billboard dla Perła - Browary Lubelskie, projekt z portfolio</span><span class="pd-m">Na zdjęciu: opakowania BeeMBER dla Pszczółki, projekt z portfolio</span></p>
+</section>
+
+<section class="sec" id="oferta">
+<div class="wrap">
+<div class="hd">
+<h2>Co projektuję</h2>
+<p class="lead">Od znaku firmy, przez opakowanie i ulotkę, po oklejony samochód i stronę internetową - jeden spójny język wizualny marki.</p>
+</div>
+<div class="of">
+<article>
+<div class="ph"><img src="img/osada-480.webp" srcset="img/osada-480.webp 480w, img/osada-960.webp 960w" sizes="(max-width:420px) 60vw, (max-width:760px) 46vw, (max-width:1500px) 30vw, 18vw" width="480" height="300" loading="lazy" alt="Logo Osada Chłabówka Zakopane"></div>
+<h3>Logo i identyfikacja wizualna</h3>
+<p>Znak, kolory, typografia i key visual, spisane w księdze znaku.</p>
+<ul><li>logotyp i warianty znaku</li><li>księga znaku lub identyfikacji</li><li>papier firmowy, wizytówki</li></ul>
+</article>
+<article>
+<div class="ph"><img src="img/matsusushi-480.webp" srcset="img/matsusushi-480.webp 480w, img/matsusushi-960.webp 960w" sizes="(max-width:420px) 60vw, (max-width:760px) 46vw, (max-width:1500px) 30vw, 18vw" width="480" height="300" loading="lazy" alt="Opakowanie Matsusushi"></div>
+<h3>Opakowania i etykiety</h3>
+<p>Suplementy, kosmetyki, produkty premium - gotowe do produkcji.</p>
+<ul><li>layout, Pantone, wykrojnik</li><li>serie i warianty produktów</li><li>packshoty do sklepu i katalogu</li></ul>
+</article>
+<article>
+<div class="ph"><img src="img/decathlon-480.webp" srcset="img/decathlon-480.webp 480w, img/decathlon-960.webp 960w" sizes="(max-width:420px) 60vw, (max-width:760px) 46vw, (max-width:1500px) 30vw, 18vw" width="480" height="300" loading="lazy" alt="Ulotki Decathlon Lublin"></div>
+<h3>Grafika reklamowa</h3>
+<p>Materiały do druku, które od razu mówią, o co chodzi.</p>
+<ul><li>ulotki, foldery, katalogi</li><li>roll-upy, bannery, billboardy</li><li>kalendarze, naklejki, zaproszenia</li></ul>
+</article>
+<article>
+<div class="ph"><img src="img/cwi-auto-480.webp" srcset="img/cwi-auto-480.webp 480w, img/cwi-auto-960.webp 960w" sizes="(max-width:420px) 60vw, (max-width:760px) 46vw, (max-width:1500px) 30vw, 18vw" width="480" height="300" loading="lazy" alt="Oklejenie samochodu Centrum Wózków Inwalidzkich"></div>
+<h3>Oznakowanie firm i pojazdów</h3>
+<p>Grafika czytelna z daleka, z wizualizacją przed wykonaniem.</p>
+<ul><li>oklejanie samochodów firmowych</li><li>witryny, szyldy, kasetony</li><li>tablice i potykacze</li></ul>
+</article>
+<article>
+<div class="ph"><img src="img/nicols-480.webp" srcset="img/nicols-480.webp 480w, img/nicols-960.webp 960w" sizes="(max-width:420px) 60vw, (max-width:760px) 46vw, (max-width:1500px) 30vw, 18vw" width="480" height="300" loading="lazy" alt="Strona internetowa Nicols"></div>
+<h3>Strony internetowe</h3>
+<p>Projekt zgodny z identyfikacją marki i wygodny w obsłudze.</p>
+<ul><li>przejrzysta struktura i UX</li><li>dopasowanie do telefonów</li><li>wsparcie w promocji</li></ul>
+</article>
+</div>
+</div>
+</section>
+
+<section class="sec g" id="portfolio">
+<div class="wrap">
+<div class="hd">
+<h2>Portfolio</h2>
+<p class="lead">Wybrane realizacje. Kliknij projekt, żeby zobaczyć go w powiększeniu.</p>
+</div>
+<div class="fl" role="group" aria-label="Filtr portfolio">
+<button type="button" data-f="*" aria-pressed="true">Wszystkie</button>
+<button type="button" data-f="logo" aria-pressed="false">Logo i identyfikacja</button>
+<button type="button" data-f="opak" aria-pressed="false">Opakowania i etykiety</button>
+<button type="button" data-f="rekl" aria-pressed="false">Grafika reklamowa</button>
+<button type="button" data-f="ozn" aria-pressed="false">Pojazdy i lokale</button>
+<button type="button" data-f="www" aria-pressed="false">Strony www</button>
+</div>
+<div class="pf" id="pf">
+<figure data-c="rekl"><button type="button" data-full="img/perla-noc-1600.webp"><img src="img/perla-noc-480.webp" srcset="img/perla-noc-480.webp 480w, img/perla-noc-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Perła - Browary Lubelskie - billboard Czarna Perła"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Perła - Browary Lubelskie<span>billboard Czarna Perła</span></figcaption></figure>
+<figure data-c="opak"><button type="button" data-full="img/pszczolka-1600.webp"><img src="img/pszczolka-480.webp" srcset="img/pszczolka-480.webp 480w, img/pszczolka-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Pszczółka - opakowania BeeMBER"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Pszczółka<span>opakowania BeeMBER</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/sparta-1600.webp"><img src="img/sparta-480.webp" srcset="img/sparta-480.webp 480w, img/sparta-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Sparta Lublin - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Sparta Lublin<span>logo</span></figcaption></figure>
+<figure data-c="ozn"><button type="button" data-full="img/cwi-auto-1600.webp"><img src="img/cwi-auto-480.webp" srcset="img/cwi-auto-480.webp 480w, img/cwi-auto-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Centrum Wózków Inwalidzkich - oklejenie samochodu"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Centrum Wózków Inwalidzkich<span>oklejenie samochodu</span></figcaption></figure>
+<figure data-c="opak"><button type="button" data-full="img/matsusushi-1600.webp"><img src="img/matsusushi-480.webp" srcset="img/matsusushi-480.webp 480w, img/matsusushi-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Matsusushi - opakowanie"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Matsusushi<span>opakowanie</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/osada-1600.webp"><img src="img/osada-480.webp" srcset="img/osada-480.webp 480w, img/osada-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Osada Chłabówka - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Osada Chłabówka<span>logo</span></figcaption></figure>
+<figure data-c="rekl"><button type="button" data-full="img/decathlon-1600.webp"><img src="img/decathlon-480.webp" srcset="img/decathlon-480.webp 480w, img/decathlon-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Decathlon Lublin - ulotki"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Decathlon Lublin<span>ulotki</span></figcaption></figure>
+<figure data-c="ozn"><button type="button" data-full="img/perla-auto-1600.webp"><img src="img/perla-auto-480.webp" srcset="img/perla-auto-480.webp 480w, img/perla-auto-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Perła Export - oklejenie samochodu"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Perła Export<span>oklejenie samochodu</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/pizza-company-1600.webp"><img src="img/pizza-company-480.webp" srcset="img/pizza-company-480.webp 480w, img/pizza-company-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Pizza Company - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Pizza Company<span>logo</span></figcaption></figure>
+<figure data-c="opak"><button type="button" data-full="img/airbolster-1600.webp"><img src="img/airbolster-480.webp" srcset="img/airbolster-480.webp 480w, img/airbolster-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Air Bolster - opakowanie etui"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Air Bolster<span>opakowanie etui</span></figcaption></figure>
+<figure data-c="rekl"><button type="button" data-full="img/k1-1600.webp"><img src="img/k1-480.webp" srcset="img/k1-480.webp 480w, img/k1-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="K1 Fighting Center - billboard"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>K1 Fighting Center<span>billboard</span></figcaption></figure>
+<figure data-c="www"><button type="button" data-full="img/nicols-1600.webp"><img src="img/nicols-480.webp" srcset="img/nicols-480.webp 480w, img/nicols-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Nicols - strona internetowa"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Nicols<span>strona internetowa</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/powder-1600.webp"><img src="img/powder-480.webp" srcset="img/powder-480.webp 480w, img/powder-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Powder Workshop - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Powder Workshop<span>logo</span></figcaption></figure>
+<figure data-c="opak"><button type="button" data-full="img/vip-1600.webp"><img src="img/vip-480.webp" srcset="img/vip-480.webp 480w, img/vip-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="VIP - etykiety piwa"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>VIP<span>etykiety piwa</span></figcaption></figure>
+<figure data-c="ozn"><button type="button" data-full="img/cwi-witryna-1600.webp"><img src="img/cwi-witryna-480.webp" srcset="img/cwi-witryna-480.webp 480w, img/cwi-witryna-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Centrum Wózków Inwalidzkich - oznakowanie lokalu"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Centrum Wózków Inwalidzkich<span>oznakowanie lokalu</span></figcaption></figure>
+<figure data-c="rekl"><button type="button" data-full="img/perla-billboard-1600.webp"><img src="img/perla-billboard-480.webp" srcset="img/perla-billboard-480.webp 480w, img/perla-billboard-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Perła Export - billboard"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Perła Export<span>billboard</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/moria-1600.webp"><img src="img/moria-480.webp" srcset="img/moria-480.webp 480w, img/moria-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Moria - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Moria<span>logo</span></figcaption></figure>
+<figure data-c="opak"><button type="button" data-full="img/perla-puszka-1600.webp"><img src="img/perla-puszka-480.webp" srcset="img/perla-puszka-480.webp 480w, img/perla-puszka-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Perła - puszka"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Perła<span>puszka</span></figcaption></figure>
+<figure data-c="rekl"><button type="button" data-full="img/polandinvest-1600.webp"><img src="img/polandinvest-480.webp" srcset="img/polandinvest-480.webp 480w, img/polandinvest-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Poland Invest - folder"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Poland Invest<span>folder</span></figcaption></figure>
+<figure data-c="ozn"><button type="button" data-full="img/geocad-1600.webp"><img src="img/geocad-480.webp" srcset="img/geocad-480.webp 480w, img/geocad-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Geocad - oklejenie samochodów"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Geocad<span>oklejenie samochodów</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/ogrody-1600.webp"><img src="img/ogrody-480.webp" srcset="img/ogrody-480.webp 480w, img/ogrody-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Ogrody Chudzyńskich - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Ogrody Chudzyńskich<span>logo</span></figcaption></figure>
+<figure data-c="rekl"><button type="button" data-full="img/unisil-1600.webp"><img src="img/unisil-480.webp" srcset="img/unisil-480.webp 480w, img/unisil-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Unisil - roll-upy"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Unisil<span>roll-upy</span></figcaption></figure>
+<figure data-c="www"><button type="button" data-full="img/polinowex-1600.webp"><img src="img/polinowex-480.webp" srcset="img/polinowex-480.webp 480w, img/polinowex-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Polinowex - strona internetowa"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Polinowex<span>strona internetowa</span></figcaption></figure>
+<figure data-c="logo"><button type="button" data-full="img/belle-1600.webp"><img src="img/belle-480.webp" srcset="img/belle-480.webp 480w, img/belle-960.webp 960w" sizes="(max-width:760px) 46vw, (max-width:1180px) 30vw, (max-width:1799px) 23vw, 15vw" width="480" height="300" loading="lazy" alt="Belle Visage - logo"><span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button><figcaption>Belle Visage<span>logo</span></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="sec dk" id="druk">
+<div class="wrap dr">
+<div>
+<h2>Projekt nie kończy się na ekranie</h2>
+<p class="lead" style="margin-top:22px">Wieloletnia praca w drukarni i współpraca z firmami poligraficznymi to wiedza, której nie widać w pliku, a widać na gotowym materiale. Projekt przygotowuję tak, żeby drukarnia mogła go od razu wdrożyć.</p>
+<div class="dl">
+<div><h3>Przygotowanie do druku</h3><ul><li>kolory Pantone i ich zachowanie na metalu, papierze, folii</li><li>dopasowanie do wykrojnika</li><li>pliki zgodne ze specyfikacją drukarni</li></ul></div>
+<div><h3>Papier i wykończenia</h3><ul><li>dobór papieru i formatu</li><li>lakier UV, tłoczenia, foliowanie</li><li>efekty metaliczne i hot-stamping</li></ul></div>
+<div><h3>Realizacja</h3><ul><li>zlecenie druku i dostawa pod wskazany adres</li><li>wizualizacje oznakowania przed wykonaniem</li></ul></div>
+<div><h3>Teksty i układ</h3><ul><li>pomoc w dopracowaniu treści</li><li>hierarchia informacji i czytelność</li></ul></div>
+</div>
+</div>
+<div class="ph">
+<img src="img/pszczolka-960.webp" srcset="img/pszczolka-480.webp 480w, img/pszczolka-960.webp 960w, img/pszczolka-1600.webp 1600w" sizes="(max-width:1180px) 92vw, 48vw" width="960" height="600" loading="lazy" alt="Opakowania BeeMBER dla Pszczółki - seria wariantów smakowych">
+<span class="sel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+</div>
+</div>
+</section>
+
+<section class="sec" id="klienci">
+<div class="wrap">
+<div class="hd">
+<h2>Dla kogo projektowałem</h2>
+<p class="lead">Wybrane marki z portfolio - od lokalnych firm z Lublina po producentów, których produkty stoją na sklepowych półkach.</p>
+</div>
+<ul class="kl">
+<li>Perła - Browary Lubelskie</li><li>Pszczółka</li><li>Decathlon Lublin</li><li>Zakłady Tytoniowe Lublin</li><li>Polish Herbs</li><li>Konstal</li>
+<li>Centrum Wózków Inwalidzkich</li><li>Unisil</li><li>Geocad</li><li>Poland Invest</li><li>Matsusushi</li><li>Hotel Twins</li>
+<li>K1 Fighting Center</li><li>Ogrody Chudzyńskich</li><li>Osada Chłabówka</li><li>Belle Visage</li><li>Implant Dental</li><li>Pro Skin Clinic</li>
+<li>Sparta Lublin</li><li>Pizza Company</li><li>Viva la Pizza</li><li>Powder Workshop</li><li>Solve Labs</li><li>Nicols</li>
+</ul>
+</div>
+</section>
+
+<section class="sec g" id="kontakt">
+<div class="wrap kt">
+<div>
+<h2>Zamów bezpłatną wycenę</h2>
+<p class="lead" style="margin-top:18px">Napisz, czego potrzebujesz - logo, opakowanie, ulotka, oklejenie auta albo coś spoza listy. Odpowiem z wyceną i propozycją dalszych kroków.</p>
+<form id="form" novalidate>
+<label>Imię i nazwisko<input name="n" autocomplete="name" required></label>
+<label>E-mail<input name="e" type="email" autocomplete="email" required></label>
+<label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+<label>Czego dotyczy projekt<select name="r"><option>Logo i identyfikacja</option><option>Opakowanie lub etykieta</option><option>Grafika reklamowa</option><option>Oznakowanie firmy lub pojazdu</option><option>Strona internetowa</option><option>Inne</option></select></label>
+<label class="w">Opis projektu<textarea name="m" required></textarea></label>
+<button class="btn" type="submit">Wyślij zapytanie</button>
+<p class="msg" id="msg" hidden role="status">Dziękuję! Na podany e-mail wysłaliśmy potwierdzenie - jeśli go nie widać, zajrzyj do folderu Spam.</p>
+<p class="note">Podgląd: formularz pokazowy, wiadomość nie jest wysyłana.</p>
+</form>
+</div>
+<div>
+<div class="dane">
+<div><h3>Michał Zieliński - Graphic Designer</h3><p>ul. Ignacego Domeyki 13/17<br>20-488 Lublin</p></div>
+<div><h3>Kontakt</h3><p><a href="tel:+48793301659">tel. 793 301 659</a><br><a href="mailto:michal@designerstudio.pl">michal@designerstudio.pl</a><br><a href="https://www.facebook.com/kreatywnygrafik" rel="noopener">Facebook</a></p></div>
+</div>
+<div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Ignacego+Domeyki+13,+20-488+Lublin&amp;output=embed" data-title="Mapa: ul. Ignacego Domeyki 13/17, Lublin"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><p style="font-weight:700;color:var(--ink);font-size:17px">Michał Zieliński - Graphic Designer</p><p style="margin-top:6px">Logo, opakowania, grafika reklamowa, oznakowanie i strony www. Od projektu do druku.</p></div>
+<div><h4>Adres</h4><p>ul. Ignacego Domeyki 13/17<br>20-488 Lublin</p></div>
+<div><h4>Kontakt</h4><ul><li><a href="tel:+48793301659">793 301 659</a></li><li><a href="mailto:michal@designerstudio.pl">michal@designerstudio.pl</a></li></ul></div>
+<div><h4>Na stronie</h4><ul><li><a href="#oferta">Oferta</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#druk">Od projektu do druku</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+</div>
+<div class="fb"><span class="cp">© <span id="rok">2026</span> Michał Zieliński - Graphic Designer</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=designerstudio.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększony projekt">
+<button class="x" type="button" aria-label="Zamknij">&times;</button>
+<button class="pv" type="button" aria-label="Poprzedni">&#8249;</button>
+<img alt="">
+<button class="nx" type="button" aria-label="Następny">&#8250;</button>
+<p></p>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
